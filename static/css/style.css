@@ -1,7 +1,7 @@
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
 html {
-    font-family: sans-serif;
+    font-family: serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -9,6 +9,7 @@ html {
 body {
     margin: 0
 }
+
 
 article,
 aside,
@@ -24,6 +25,8 @@ section,
 summary {
     display: block
 }
+
+
 
 audio,
 canvas,
@@ -968,7 +971,7 @@ img {
 }
 
 .inner {
-    max-width: 32em;
+    max-width: 64em;
     margin: 0 auto;
     padding: 0 2em
 }
@@ -1435,12 +1438,21 @@ img {
     margin: 0
 }
 
-.post-content a {
+.post-content a.post-content a {
     border-bottom: 1px solid #f26a3d
 }
 
 .post-content a:hover,
 .post-content a:focus {
+    color: #f26a3d
+}
+
+a {
+    border-bottom: 1px solid #f26a3d
+}
+
+a:hover,
+a:focus {
     color: #f26a3d
 }
 
@@ -1830,16 +1842,16 @@ img {
     vertical-align: middle;
 }
 
-.tag-weight-1  { font-size: 100%; }
-.tag-weight-2  { font-size: 120%; }
-.tag-weight-3  { font-size: 140%; }
-.tag-weight-4  { font-size: 160%; }
-.tag-weight-5  { font-size: 180%; }
-.tag-weight-6  { font-size: 200%; }
-.tag-weight-7  { font-size: 220%; }
-.tag-weight-8  { font-size: 240%; }
-.tag-weight-9  { font-size: 260%; }
-.tag-weight-10 { font-size: 280%; }
+.tag-weight-1  { font-size: 55%; }
+.tag-weight-2  { font-size: 60%; }
+.tag-weight-3  { font-size: 65%; }
+.tag-weight-4  { font-size: 70%; }
+.tag-weight-5  { font-size: 75%; }
+.tag-weight-6  { font-size: 80%; }
+.tag-weight-7  { font-size: 85%; }
+.tag-weight-8  { font-size: 90%; }
+.tag-weight-9  { font-size: 95%; }
+.tag-weight-10 { font-size: 100%; }
 
 @media only screen and (max-width: 960px) {
     #wrapper, #blog-header, #post-header {
@@ -1881,7 +1893,7 @@ img {
 
 @media only screen and (max-width: 480px) {
     .inner {
-        padding: 0 16px
+        pa/dding: 0 16px
     }
     .post-template #main-header {
         padding: 16px 0
