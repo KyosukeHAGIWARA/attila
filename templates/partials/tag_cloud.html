@@ -1,0 +1,12 @@
+{% set max_count = (tags|map('last')|map('count')|max) or 1 %}
+{% set steps = (TAG_CLOUD_STEPS|default(5, true)) - 1 %}
+<article class="post">
+    <div class="tag-cloud">
+        {% for tag, articles in tags|sort %}
+        {% set count = articles|count %}
+        <div class="tag tag-weight-{{ (count/(max_count/steps))|int + 1 }}">
+            <a href="{{ SITEURL }}/{{ tag.url }}" title="{{ count }} article(s) tagged '{{ tag }}'">{{ tag }}</a>
+        </div>
+        {% endfor %}
+    </div>
+</article>
