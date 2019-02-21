@@ -1,7 +1,7 @@
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
 html {
-    font-family:'Dotum', serif;
+    font-family:'Dotum', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -289,24 +289,24 @@ th {
 }
 
 @font-face {
-    font-family: 'Cardo';
+    font-family: 'Dotum';
     font-style: normal;
     font-weight: 400;
-    src: local("Cardo"), local("Cardo-Regular"), url("//fonts.gstatic.com/s/cardo/v8/f9GbO0_LnwwuaRC6yAh0JKCWcynf_cDxXwCLxiixG1c.woff2") format("woff2"), url("//fonts.gstatic.com/s/cardo/v8/c6Zi_ulq7hv-avk-G9Yut6CWcynf_cDxXwCLxiixG1c.woff") format("woff")
+    src: local("Dotum"), local("Dotum-Regular"), url("//fonts.gstatic.com/s/Dotum/v8/f9GbO0_LnwwuaRC6yAh0JKCWcynf_cDxXwCLxiixG1c.woff2") format("woff2"), url("//fonts.gstatic.com/s/Dotum/v8/c6Zi_ulq7hv-avk-G9Yut6CWcynf_cDxXwCLxiixG1c.woff") format("woff")
 }
 
 @font-face {
-    font-family: 'Cardo';
+    font-family: 'Dotum';
     font-style: normal;
     font-weight: 700;
-    src: local("Cardo Bold"), local("Cardo-Bold"), url("//fonts.gstatic.com/s/cardo/v8/X-1BEHTKpRYzad3JEXy9-nYhjbSpvc47ee6xR_80Hnw.woff2") format("woff2"), url("//fonts.gstatic.com/s/cardo/v8/gHC1KgRPdVNdvvVcxLMCY3YhjbSpvc47ee6xR_80Hnw.woff") format("woff")
+    src: local("Dotum Bold"), local("Dotum-Bold"), url("//fonts.gstatic.com/s/Dotum/v8/X-1BEHTKpRYzad3JEXy9-nYhjbSpvc47ee6xR_80Hnw.woff2") format("woff2"), url("//fonts.gstatic.com/s/Dotum/v8/gHC1KgRPdVNdvvVcxLMCY3YhjbSpvc47ee6xR_80Hnw.woff") format("woff")
 }
 
 @font-face {
-    font-family: 'Cardo';
+    font-family: 'Dotum';
     font-style: italic;
     font-weight: 400;
-    src: local("Cardo Italic"), local("Cardo-Italic"), url("//fonts.gstatic.com/s/cardo/v8/aRpKelDgx13ov6asvC3QbgLUuEpTyoUstqEm5AMlJo4.woff2") format("woff2"), url("//fonts.gstatic.com/s/cardo/v8/mSKSxAIybPTfRoik7xAeTQLUuEpTyoUstqEm5AMlJo4.woff") format("woff")
+    src: local("Dotum Italic"), local("Dotum-Italic"), url("//fonts.gstatic.com/s/Dotum/v8/aRpKelDgx13ov6asvC3QbgLUuEpTyoUstqEm5AMlJo4.woff2") format("woff2"), url("//fonts.gstatic.com/s/Dotum/v8/mSKSxAIybPTfRoik7xAeTQLUuEpTyoUstqEm5AMlJo4.woff") format("woff")
 }
 
 @font-face {
@@ -472,7 +472,7 @@ html.menu-active,
 }
 
 body {
-    font: 400 2em / 1.5em 'Cardo', serif;
+    font: 400 2em / 1.5em 'Dotum', sans-serif;
     color: #45484d;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -1438,7 +1438,7 @@ img {
     margin: 0
 }
 
-.post-content a.post-content a {
+.post-content a {
     border-bottom: 1px solid #f26a3d
 }
 
@@ -1827,6 +1827,8 @@ img {
     margin-bottom: 3em;
 }
 
+
+
 .tag {
     display: inline-block;
     padding: 0.2em 0.15em;
@@ -1889,6 +1891,11 @@ margin: 5px;
 
 .sub_col_item a {
 border-bottom: 1px solid #f26a3d
+}
+
+/* タグクラウドが下線なし */
+.tag-cloud a {
+    border: none;
 }
 
 .sub_col_item  a:hover,
